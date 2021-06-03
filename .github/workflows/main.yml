@@ -18,8 +18,11 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - 
+        id: get_version
+        uses: battila7/get-version-action@v2
+      -
         name: Push to Docker Hub
         uses: docker/build-push-action@v2.5.0
         with:
           push: true
-          tags: ${{ github.repository }}:${{github.ref}}
+          tags: ${{ github.repository }}:${{ steps.get_version.outputs.version-without-v }}

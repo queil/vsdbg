@@ -1,6 +1,7 @@
-# vsdbg [![Docker Repository on Quay](https://quay.io/repository/queil/vsdbg/status "Docker Repository on Quay")](https://quay.io/repository/queil/vsdbg)
-Vsdbg image
+# vsdbg
+
+A .NET 5 SDK image for debugging .NET apps running in Docker/Kubernetes. 
 
 ```
-docker pull quay.io/queil/vsdbg:v0.1.0
+docker pull ghcr.io/queil/vsdbg:0.2.0
 ```

@@ -1,7 +1,7 @@
 # vsdbg
 
-A .NET 5 SDK image for debugging .NET apps running in Docker/Kubernetes. 
+A .NET 6 SDK image for debugging .NET apps running in Docker/Kubernetes. 
 
 ```
-docker pull ghcr.io/queil/vsdbg:0.2.0
+docker pull ghcr.io/queil/vsdbg:0.3.0
 ```

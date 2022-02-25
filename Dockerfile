@@ -12,4 +12,6 @@ WORKDIR /app
 COPY ./watch.sh ./watch.sh
 RUN chmod +x ./watch.sh
 
+ENV APP_DIR /app
+
 ENTRYPOINT ["sh", "/app/watch.sh"]

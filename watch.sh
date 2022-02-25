@@ -1,3 +1,3 @@
 #!/bin/sh
-dotnet restore
-dotnet watch run --no-restore
+dotnet restore $APP_DIR
+dotnet watch run --project $APP_DIR --no-restore
